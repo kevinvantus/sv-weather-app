@@ -1,3 +1,3 @@
 <script lang="ts"></script>
 
-<h1>Weather app</h1>
+<h1 class="text-1">Weather app</h1>
