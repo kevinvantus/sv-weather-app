@@ -1,11 +1,90 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("/assets/fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf")
+    format("truetype-variations");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("/assets/fonts/DM_Sans/DMSans-Italic-VariableFont_opsz\,wght.ttf")
+    format("truetype-variations");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("/assets/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf")
+    format("truetype-variations");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  --primary-font: "DM Sans";
+  --secondary-font: "Bricolage Grotesque";
+
+  --neutral-900: hsla(241, 96%, 9%, 1);
+  --neutral-800: hsla(242, 27%, 20%, 1);
+  --neutral-700: hsla(242, 22%, 24%, 1);
+  --neutral-600: hsla(242, 23%, 30%, 1);
+  --neutral-300: hsla(240, 7%, 70%, 1);
+  --neutral-200: hsla(250, 7%, 84%, 1);
+  --neutral-0: hsla(0, 0%, 100%, 1);
+  --orange: hsla(29, 100%, 52%, 1);
+  --blue-700: hsla(247, 70%, 36%, 1);
+  --blue-500: hsla(233, 66%, 56%, 1);
+
+  --size-0: 0;
+  --size-25: 2px;
+  --size-50: 4px;
+  --size-75: 6px;
+  --size-100: 8px;
+  --size-125: 10px;
+  --size-150: 12px;
+  --size-200: 16px;
+  --size-250: 20px;
+  --size-300: 24px;
+  --size-400: 32px;
+  --size-500: 40px;
+  --size-600: 48px;
+  --size-800: 64px;
+  --size-1000: 80px;
+  --size-1200: 96px;
+  --size-1400: 112px;
+  --size-1600: 128px;
+  --size-1800: 140px;
+
+  --radius-0: 0;
+  --radius-4: var(--size-50);
+  --radius-6: var(--size-70);
+  --radius-8: var(--size-100);
+  --radius-10: var(--size-125);
+  --radius-12: var(--size-150);
+  --radius-20: var(--size-250);
+  --radius-24: var(--size-300);
+  --radius-full: 999px;
+
+  font-family: var(--primary-font), system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--neutral-0);
+  background-color: var(--neutral-900);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,20 +98,62 @@ body {
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* Utils */
+.text-1 {
+  font: italic 600 6rem/1 var(--primary-font);
+  letter-spacing: -2px;
 }
 
-.card {
-  padding: 2em;
+.text-2 {
+  font: 700 3.25rem/1.2 var(--secondary-font);
+  letter-spacing: 0;
+}
+
+.text-3 {
+  font: 300 2rem/1 var(--primary-font);
+  letter-spacing: 0;
+}
+
+.text-4 {
+  font: 700 1.75rem/1.2 var(--primary-font);
+  letter-spacing: 0;
+}
+
+.text-5 {
+  font: 600 1.25rem/1.2 var(--primary-font);
+  letter-spacing: 0;
+}
+
+.text-5.md {
+  font-weight: 500;
+}
+
+.text-6 {
+  font: 500 1.125rem/1.2 var(--primary-font);
+  letter-spacing: 0;
+}
+
+.text-7 {
+  font: 500 1rem/1.2 var(--primary-font);
+  letter-spacing: 0;
+}
+
+.text-8 {
+  font: 500 0.875rem/1.2 var(--primary-font);
+  letter-spacing: 0;
 }
 
 #app {
-  max-width: 1280px;
+  max-width: 1216px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: var(--size-200) var(--size-200) var(--size-600);
+  display: grid;
+  gap: var(--size-600);
+}
+
+#main-content {
+  display: grid;
+  gap: var(--size-400);
 }
 
 @media (prefers-color-scheme: light) {
