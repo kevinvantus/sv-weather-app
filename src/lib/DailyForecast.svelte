@@ -25,11 +25,18 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--size-200);
+    margin-bottom: var(--size-400);
   }
 
   @media screen and (min-width: 768px) {
     .weather-cards-ctr {
       grid-template-columns: repeat(7, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 1260px) {
+    .weather-cards-ctr {
+      margin-bottom: 0;
     }
   }
 </style>

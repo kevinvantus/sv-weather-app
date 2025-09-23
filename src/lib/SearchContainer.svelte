@@ -70,6 +70,9 @@
   @media screen and (min-width: 768px) {
     .search-ctr {
       flex-direction: row;
+      width: 100%;
+      max-width: 41rem;
+      margin-inline: auto;
     }
 
     .search-input-wrapper {

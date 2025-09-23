@@ -175,3 +175,19 @@ button {
     padding: var(--size-300) var(--size-300) var(--size-1000);
   }
 }
+
+@media screen and (min-width: 1260px) {
+  #app {
+    padding-inline: 0;
+  }
+
+  .content-ctr {
+    display: grid;
+    grid-template-columns: 50rem auto;
+    column-gap: var(--size-400);
+  }
+
+  .hourly-forecast {
+    height: 100%;
+  }
+}

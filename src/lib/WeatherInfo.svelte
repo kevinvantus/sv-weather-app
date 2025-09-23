@@ -31,6 +31,7 @@
       linear-gradient(94deg, #4658d9 -8.59%, #2b1b9c 98.38%),
       url(/assets/images/bg-today-small.svg) no-repeat center/cover;
     background-blend-mode: saturation;
+    margin-bottom: var(--size-250);
   }
 
   /* .weather-info::before {
@@ -79,6 +80,12 @@
 
     .temp-ctr {
       margin-inline-start: auto;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .weather-info {
+      margin-bottom: var(--size-400);
     }
   }
 </style>

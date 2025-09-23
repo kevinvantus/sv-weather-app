@@ -18,4 +18,11 @@
       display: none;
     }
   }
+
+  @media screen and (min-width: 1260px) {
+    h1 {
+      width: 100%;
+      text-align: center;
+    }
+  }
 </style>

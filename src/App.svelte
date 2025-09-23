@@ -13,7 +13,15 @@
 
 <main id="main-content">
   <Search />
-  <WeatherInfoContainer />
-  <DailyForecast />
-  <HourlyForecast />
+
+  <div class="content-ctr">
+    <div class="left-content">
+      <WeatherInfoContainer />
+      <DailyForecast />
+    </div>
+
+    <div class="right-content">
+      <HourlyForecast />
+    </div>
+  </div>
 </main>
