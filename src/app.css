@@ -98,7 +98,7 @@ body {
   min-height: 100vh;
 }
 
-/* Utils */
+/* Typography */
 .text-1 {
   font: italic 600 6rem/1 var(--primary-font);
   letter-spacing: -2px;
@@ -154,6 +154,13 @@ body {
 #main-content {
   display: grid;
   gap: var(--size-400);
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
 }
 
 @media (prefers-color-scheme: light) {
