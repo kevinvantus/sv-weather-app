@@ -68,4 +68,20 @@
   .temp {
     flex: 1;
   }
+
+  @media screen and (min-width: 768px) {
+    .weather-info {
+      flex-direction: row;
+      align-items: center;
+      height: 286px;
+      /* background:
+        linear-gradient(94deg, #4658d9 -8.59%, #2b1b9c 98.38%),
+        url(/assets/images/bg-today-large.svg) no-repeat center/cover; */
+      background-image: url(/assets/images/bg-today-large.svg);
+    }
+
+    .temp-ctr {
+      margin-inline-start: auto;
+    }
+  }
 </style>

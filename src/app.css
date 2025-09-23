@@ -162,3 +162,9 @@ body {
     background-color: #ffffff;
   }
 }
+
+@media screen and (min-width: 768px) {
+  #app {
+    padding: var(--size-300) var(--size-300) var(--size-1000);
+  }
+}
